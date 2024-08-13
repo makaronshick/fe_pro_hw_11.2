@@ -11,9 +11,9 @@ const buttonElement = document.querySelector('body button');
 buttonElement.addEventListener('click', () => {
   const divTextElement = document.querySelector('body div');
 
-  if (document.querySelector('.new_color')) {
-    divTextElement.className = '';
+  if (divTextElement.className === '') {
+    divTextElement.classList.add("new_color");
   } else {
-    divTextElement.className = 'new_color';
+    divTextElement.className = '';
   }
 })
